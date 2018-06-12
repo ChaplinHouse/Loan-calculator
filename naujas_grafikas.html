@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BA projektas</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2>Palūkanų normos skaičiuoklė</h2>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form class="info-for-calc" method="post">
+          <div class="data-from-user">
+            <ul>
+              <li>Pradžios data <input id="pickTheDate" type="date"></li>
+              <li>Paskolos suma <input id="pickRemainingAmount" type="number"> &euro;</li>
+              <li>Metinė palūkanų norma <input id="pickInterestRate" type="number"> &percnt;</li>
+              <li>Įmokų skaičius <input id="pickTotalPayments" type="number"></li>
+              <li><input id="getNewTable" type="button" value="Skaičiuoti"></li>
+            </ul>
+          </div>
+        </form>
+        <table id="result-two">
+          <tr>
+            <th>Payment #</th>
+            <th>Payment date</th>
+            <th>Remaining amount</th>
+            <th>Principal payment</th>
+            <th>Interest payment</th>
+            <th>Total payment</th>
+            <th>Interest rate</th>
+          </tr>
+        </table>
+        <button class="download-second">Atsisiųsti .csv failą</button>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/app_naujas_grafikas.js"></script>
+  </body>
+</html>
